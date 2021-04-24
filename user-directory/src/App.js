@@ -29,7 +29,7 @@ function App() {
     })
   }, [])
 
-  console.log(users);
+  console.log('USERS:', users);
 
   return (
     <div className="App">

@@ -29,10 +29,11 @@ function App() {
             gender: user.gender,
             image: user.picture.large,
             email: user.email.toString(),
-            phone: user.phone
+            phone: user.phone,
+            age: user.registered.age.toString()
           }
       })
-      // .sort((a,b) => a.name.localeCompare(b.name))
+      // .sort((user) => user.gender)
       // )})
       // .sort.gender((a,b) => a.gender.localeCompare(b.gender))
       )})
@@ -44,17 +45,18 @@ function App() {
   //     setSortName(!sortName);
   // }
 
-  const searchFunction =() => {
-    console.log('this is where your search function would be if you had one HAHA')
+  const fuckThePatriarchy =() => {
+    console.log('this is where the gender would be if I had one HAHA');
+    
   }
 
   console.log('USERS:', users);
 
   return (
     <div className="App">
-      <button onClick={searchFunction}>Search</button><p></p>
+      <button onClick={fuckThePatriarchy}>WAMEN ONLY</button><p></p>
       <button onClick={() => setSortName('name')}>Sort by Name</button>
-      <button onClick={() => setSortName('email')}>Sort by Email</button>
+      <button onClick={() => setSortName('age')}>Sort by Age</button>
       {users
         .sort((a,b) => { 
           if(sortName) {
@@ -63,7 +65,7 @@ function App() {
             return b[sortName].localeCompare(a[sortName])
           }
         })
-        .map(u => <User name={u.name} gender={u.gender} image={u.image} email={u.email} phone={u.phone}/>)}
+        .map(u => <User name={u.name} gender={u.gender} image={u.image} email={u.email} phone={u.phone} age={u.age}/>)}
     </div>
   );
 }

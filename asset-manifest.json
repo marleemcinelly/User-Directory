@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/marleemcinelly/User-Directory/static/css/main.1b297e08.chunk.css",
+    "main.js": "/marleemcinelly/User-Directory/static/js/main.d2255d9a.chunk.js",
+    "main.js.map": "/marleemcinelly/User-Directory/static/js/main.d2255d9a.chunk.js.map",
+    "runtime-main.js": "/marleemcinelly/User-Directory/static/js/runtime-main.a2e18353.js",
+    "runtime-main.js.map": "/marleemcinelly/User-Directory/static/js/runtime-main.a2e18353.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/marleemcinelly/User-Directory/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.4d1b46b9.chunk.js": "/marleemcinelly/User-Directory/static/js/2.4d1b46b9.chunk.js",
+    "static/js/2.4d1b46b9.chunk.js.map": "/marleemcinelly/User-Directory/static/js/2.4d1b46b9.chunk.js.map",
+    "static/js/3.3409e89e.chunk.js": "/marleemcinelly/User-Directory/static/js/3.3409e89e.chunk.js",
+    "static/js/3.3409e89e.chunk.js.map": "/marleemcinelly/User-Directory/static/js/3.3409e89e.chunk.js.map",
+    "index.html": "/marleemcinelly/User-Directory/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/marleemcinelly/User-Directory/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.1b297e08.chunk.css.map": "/marleemcinelly/User-Directory/static/css/main.1b297e08.chunk.css.map",
+    "static/js/2.4d1b46b9.chunk.js.LICENSE.txt": "/marleemcinelly/User-Directory/static/js/2.4d1b46b9.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/marleemcinelly/User-Directory/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a2e18353.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.4d1b46b9.chunk.js",
+    "static/css/main.1b297e08.chunk.css",
+    "static/js/main.d2255d9a.chunk.js"
+  ]
+}

@@ -35,7 +35,7 @@ function App() {
       })
       // .sort((user) => user.gender)
       // )})
-      // .sort.gender((a,b) => a.gender.localeCompare(b.gender))
+      // .sort((a,b) => a.name.localeCompare(b.name))
       )})
     
   }, [])
@@ -45,16 +45,24 @@ function App() {
   //     setSortName(!sortName);
   // }
 
+  // var female = sortName.filter(e => e.type === "female")
+
   const fuckThePatriarchy =() => {
     console.log('this is where the gender would be if I had one HAHA');
-    
+    setUsers((a,b)=> {
+      if('gender' === 'female'){
+        console.log('look at all those women');
+      } else {
+        console.log('when will you learn that your actions have consequences');
+      }
+    });
   }
 
   console.log('USERS:', users);
 
   return (
     <div className="App">
-      <button onClick={fuckThePatriarchy}>WAMEN ONLY</button><p></p>
+      <button onClick={fuckThePatriarchy}>I wish this button worked</button><p></p>
       <button onClick={() => setSortName('name')}>Sort by Name</button>
       <button onClick={() => setSortName('age')}>Sort by Age</button>
       {users

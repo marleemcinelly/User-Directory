@@ -5,13 +5,31 @@ import API from './utils/API'
 
 function App() {
 
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState([
+    {
+      name: '',
+      gender: '',
+      image: '',
+      email: '',
+      phone: ''
+    }
+  ]);
 
   useEffect(() => {
     API.search().then(result => {
-      console.log(result.data.results)
+      setUsers(result.data.results.map(user => {
+        return {
+          name: user.name.first + ' ' + user.name.last,
+          gender: user.gender,
+          image: user.picture.thumbnail,
+          email: user.email,
+          phone: user.phone
+        }
+      }))
     })
   }, [])
+
+  console.log(users);
 
   return (
     <div className="App">
